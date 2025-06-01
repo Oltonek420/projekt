@@ -1,0 +1,283 @@
+/* RESET - resetuje wszystkie domyślne marginesy, paddingi i box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Kolory i czcionki dla całej strony */
+  body {
+    background-color: #fdf1e6; /* Jasno kremowe tło, subtelniejszy odcień */
+    color: #333; /* Trochę ciemniejszy kolor tekstu, aby był lepiej czytelny */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nowoczesna czcionka */
+    line-height: 1.6; /* Zwiększa interlinię dla lepszej czytelności */
+  }
+  
+  /* Nagłówek */
+  header {
+    background: linear-gradient(135deg, #ffe4b5, #f0e68c); /* Gradient tła, aby nadać subtelny efekt */
+    padding: 30px; /* Większy padding dla bardziej przestronnej sekcji */
+    text-align: center;
+    border-bottom: 3px solid #b8860b; /* Grubsza linia oddzielająca nagłówek od reszty */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Delikatny cień, żeby nagłówek wyglądał bardziej wypukło */
+  }
+  
+  header h1 {
+    color: #b8860b; /* Złoty kolor tytułu */
+    font-size: 3rem; /* Większy rozmiar czcionki dla tytułu */
+    text-transform: uppercase; /* Ustawię tekst na wielkie litery, żeby wyglądał bardziej elegancko */
+    letter-spacing: 1px; /* Zwiększam odstępy między literami */
+  }
+  
+  /* Menu nawigacyjne */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  nav ul li {
+    margin: 0 15px; /* Większe odstępy między elementami menu */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333; /* Kolor tekstu na ciemny, żeby lepiej komponował się z tłem */
+    font-weight: 600; /* Grubsza czcionka dla linków */
+    transition: color 0.3s ease; /* Łagodna animacja zmiany koloru */
+  }
+  
+  /* Zmiana koloru linków po najechaniu */
+  nav ul li a:hover {
+    color: #b8860b; /* Kolor złoty przy najechaniu */
+    transform: scale(1.1); /* Powiększenie linku przy najechaniu */
+  }
+  
+  /* Sekcja główna (Hero image) */
+  .hero {
+    height: 350px; /* Zwiększam wysokość sekcji hero */
+    background: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-bottom: 5px solid #b8860b; /* Złote obramowanie dla eleganckiego wyglądu */
+  }
+  
+  .hero-content {
+    color: white;
+    text-align: center;
+    padding-top: 120px;
+    background-color: rgba(0, 0, 0, 0.5); /* Lekka przezroczystość */
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Cień, aby zawartość wyróżniała się na tle */
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem; /* Większy rozmiar czcionki */
+    font-weight: 700; /* Grubsza czcionka */
+    margin-bottom: 20px; /* Odstęp poniżej tekstu */
+  }
+  
+  .hero-content .btn {
+    background: #b8860b;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px; /* Zaokrąglone rogi przycisku */
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Zmiana koloru przycisku po najechaniu */
+  .hero-content .btn:hover {
+    background: #8b4513; /* Ciemniejszy brąz przy najechaniu */
+    transform: translateY(-20px); /* Przycisk lekko unosi się przy najechaniu */
+  }
+  
+  /* Sekcja "O nas" */
+  .about {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem; /* Większy rozmiar czcionki */
+    color: #b8860b; /* Złoty kolor nagłówka */
+    margin-bottom: 30px;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    color: #555; /* Trochę ciemniejszy kolor tekstu dla lepszej czytelności */
+    line-height: 1.8; /* Zwiększam interlinię */
+    text-align: justify;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px; /* Zaokrąglone rogi obrazków */
+    border: 5px solid #f0e68c; /* Delikatne złote obramowanie */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Cień wokół obrazka */
+  }
+  
+  /* Menu */
+  .menu-section, .menu-page {
+    background-color: #f0e68c;
+    padding: 40px 20px;
+  }
+  
+  .menu-section h2, .menu-page h2 {
+    font-size: 2.5rem;
+    color: #b8860b;
+    margin-bottom: 30px;
+  }
+  
+  .menu-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Cień wokół pozycji */
+    transition: transform 0.3s ease; /* Animacja przycisku menu */
+  }
+  
+  /* Zmiana stylu po najechaniu na pozycję menu */
+  .menu-item:hover {
+    transform: scale(1.05); /* Lekka animacja powiększenia */
+  }
+  
+  .menu-item h4 {
+    font-size: 1.5rem;
+    color: #8b4513;
+    margin-bottom: 15px;
+  }
+  
+  .menu-item .price {
+    color: #b8860b;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  
+  /* Galeria */
+  .gallery {
+    padding: 40px 20px;
+    background: #fff;
+  }
+  
+  .gallery h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #b8860b;
+    margin-bottom: 30px;
+  }
+  
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    max-width: 320px;
+    margin: 15px;
+    border-radius: 10px; /* Zaokrąglone rogi obrazków */
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Cień wokół obrazków */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Zmiana stylu przy najechaniu na obrazek */
+  .gallery-item img:hover {
+    transform: scale(1.1); /* Powiększenie obrazka przy najechaniu */
+  }
+  
+  /* Kontakt */
+  .contact {
+    background: #ffe4b5;
+    padding: 40px 20px;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b8860b;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info, .contact-form {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info h3, .contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px; /* Zaokrąglone rogi dla formularza */
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus, .form-group textarea:focus {
+    border-color: #b8860b; /* Złota obwódka przy kliknięciu */
+  }
+  
+  /* Stopka */
+  footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  footer .social-links {
+    margin-top: 15px;
+  }
+  
+  footer .social-link {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  footer .social-link:hover {
+    transform: scale(1.2); /* Powiększenie ikony przy najechaniu */
+  }
+  
+  /* Responsywność */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .gallery-item img {
+      max-width: 100%;
+    }
+  
+    .about-content {
+      flex-direction: column;
+    }
+  
+    .menu-item {
+      padding: 15px;
+    }
+  
+    .hero-content {
+      padding-top: 50px; /* Zmniejszamy padding dla małych ekranów */
+    }
+  }
+  
